@@ -1,12 +1,41 @@
-# React + Vite
+# 🗺️ North East State Pincode Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based application to explore the number of unique **pincodes** and **districts** in the **North East Indian states** using data from the [Data.gov.in](https://data.gov.in/) public API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Search by State (Assam, Mizoram, Meghalaya, Manipur, Nagaland, Tripura, Sikkim)
+- ✅ Displays unique pincodes and districts
+- ✅ Fetches real-time data using official Government of India API
+- ✅ Paginated API fetching for full data retrieval
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Technologies Used
+
+- React (via Vite or Create React App)
+- Axios for API requests
+- HTML/CSS for styling
+
+---
+
+## 🌐 API Info
+
+Data is fetched from [Data.gov.in](https://data.gov.in/):
+- **Resource ID:** `5c2f62fe-5afa-4119-a499-fec9d604d5bd`
+- **API Key:** Public (or your own registered key)
+- **Output Format:** JSON
+- **Pagination:** Implemented using `limit` and `offset`
+- **Filtered By:** `filters[statename]`
+
+---
+
+## 🛠️ Setup & Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/northeast-pincode-finder.git
+cd northeast-pincode-finder
